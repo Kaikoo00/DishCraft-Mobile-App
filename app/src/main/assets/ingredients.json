@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Sugar",
+    "isVegan": true
+  },
+  {
+    "name": "Honey",
+    "isVegan": false
+  }
+]

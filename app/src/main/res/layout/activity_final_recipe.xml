@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FinalRecipe"
+    android:background="@drawable/backgroundgrey">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="55sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape4back"
+        android:fontFamily="@font/urbanistmedium"
+        android:text="Back"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/urbanistmedium"
+        android:gravity="center"
+        android:text="Recipe"
+        android:textColor="@color/white"
+
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="300dp"
+        android:layout_height="185dp"
+        android:background="@drawable/food"
+        app:circularflow_defaultRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/scrollView3"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0"-->
+<!--        tools:layout_editor_absoluteX="0dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/descriptioninput"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/button_shape1"-->
+<!--            android:fontFamily="@font/urbanistregular"-->
+<!--            android:gravity="top"-->
+<!--            android:text="List Of Ingredients:\n500 gram daging ayam\n1 cangkir tepung terigu\n2 butir telur\n2 cangkir tepung roti\nsambal"-->
+<!--            android:padding="10dp"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/FinalRecipeGuide"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
+<!--    </ScrollView>-->
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/FinalRecipeGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="@font/urbanistregular"
+            android:gravity="top"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:text="List Of Ingredients:
+            \n500 gram daging ayam\n1 cangkir tepung terigu\n2 butir telur\n2 cangkir tepung roti\nsambal
+            \n
+            \n
+1. Lumuri potongan ayam dengan sedikit garam dan merica.
+\n2. Celupkan ayam ke dalam tepung terigu, pastikan terbalut rata.
+Kemudian celupkan ke dalam telur kocok.
+Gulingkan ayam dalam tepung roti hingga merata.
+\n3. Panaskan minyak dalam wajan dengan api sedang.
+Goreng potongan ayam hingga kecokelatan dan matang sempurna.
+Tiriskan ayam di atas tisu dapur untuk menyerap kelebihan minyak.
+\"
+
+            android:textColor="@color/black" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

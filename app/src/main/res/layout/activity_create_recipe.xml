@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/backgroundgrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRecipe">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="55sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/button_shape4back"
+            android:fontFamily="@font/urbanistmedium"
+            android:text="Back"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanistmedium"
+            android:gravity="center"
+            android:text="Pick Ingredients"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/urbanistmedium"
+            android:gravity="center"
+            android:text="Missing an Ingredient?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.17" />
+
+
+        <Button
+            android:id="@+id/add_here"
+            android:layout_width="match_parent"
+            android:layout_height="33sp"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/urbanistmedium"
+            android:gravity="center"
+            android:text="Add Here"
+            android:textColor="#0B9E46"
+            android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_ingredient_pick"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_margin="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        <!--
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.792"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <CheckBox
+            android:id="@+id/Ingredients1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="@font/urbanistmedium"
+            android:nestedScrollingEnabled="true"
+            android:padding="10sp"
+            android:text="Ayam"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <CheckBox
+            android:id="@+id/Ingredients2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="@font/urbanistmedium"
+            android:nestedScrollingEnabled="true"
+            android:padding="10sp"
+            android:text="Telur"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <CheckBox
+            android:id="@+id/Ingredients3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="@font/urbanistmedium"
+            android:nestedScrollingEnabled="true"
+            android:padding="10sp"
+            android:text="Tepung Terigu"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <CheckBox
+            android:id="@+id/Ingredients4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="@font/urbanistmedium"
+            android:nestedScrollingEnabled="true"
+            android:padding="10sp"
+            android:text="Tepung Roti"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <CheckBox
+            android:id="@+id/Ingredients5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/button_shape1"
+            android:fontFamily="@font/urbanistmedium"
+            android:nestedScrollingEnabled="true"
+            android:padding="10sp"
+            android:text="Sambal"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+-->
+
+        <Button
+            android:id="@+id/button_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16sp"
+            android:background="@drawable/button_shape2generate"
+            android:fontFamily="@font/urbanistsemibold"
+            android:padding="12sp"
+            android:text="Generate Recipe"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
